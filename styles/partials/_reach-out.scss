@@ -1,0 +1,39 @@
+// REACH OUT ****
+.reach-out {
+	text-align: center;
+	background-image: url(../assets/geometric_bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 9rem 0;
+	position: relative;
+	z-index: 3;
+		&:after {
+		content: "";
+		position: absolute;
+		background: rgba(17, 17, 17, 0.55);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	.reach-heading{
+		font-family: $Open;
+		font-size: 1.8rem;
+		color: $accentGrey;
+		text-transform: uppercase;
+		font-weight: 300;
+		letter-spacing: 0.3rem;
+	}
+	.reach-out-button a {
+		@include buttonStyle ($mainHeaderColour, $accentGrey);
+		padding: 1rem 3.8rem;
+		margin-top: 3rem;
+		transition: all 0.3s ease;
+		&:hover {
+			background: $mainHeaderColour;
+			color: #ececec;
+			border: 1px solid #ececec;
+		}
+	}
+}

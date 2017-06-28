@@ -1,0 +1,144 @@
+// CONTACT ****
+.contact { 
+	padding-bottom: 10rem;
+	.map-container {
+	background-image: url(../assets/google-map-styled.jpg);
+	background-size: cover;
+	padding: 10rem;
+	}
+	.contact-container {
+		background: #fff;
+		padding: 7rem 10rem;
+			li {
+				width: 50%;
+				margin-bottom: 4rem;
+			}
+		.contact-content {
+			@include navLinks ($mainTextColour, 1.2rem);
+			margin: 0;
+			letter-spacing: 0.2rem;
+		}
+		.contact-heading {
+			@include lowerHeadingStyle ($mainHeaderColour, 1.2rem, 0.8rem);
+			margin: 0 0 1rem 0;
+			letter-spacing: 0.2rem;
+		}
+	}
+	h2, .subheading {
+	text-align: center;
+	}
+	.subheading {
+		margin-bottom: 10rem;
+	}
+}
+.contact form {
+	width: 100%;
+	margin-top: 10rem;
+	justify-content: space-between;
+	align-content: justify-content;
+	label {
+		font-family: $Mont;
+		font-size: 1.1rem;
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: 400;
+		line-height: 0.8rem;
+		letter-spacing: 0.2rem;
+		margin-bottom: 3rem;
+	}
+	input:not(.button), textarea {
+		width: 100%;
+		display: inline-block;
+		padding: 1rem;
+		margin-bottom: 1rem;
+		font-size: 1.4rem;
+		font-family: $Open;
+		font-weight: 300;
+		color: #999;
+		line-height: 2.6rem;
+	}
+	input[type=submit] {
+		width: 75%;
+		border: none;
+		@include buttonStyle;
+		padding: 0.8rem 3.8rem;
+		transition: all 0.3s ease;
+		&:hover {
+			background: #fff;
+			color: $mainHeaderColour;
+			border: 1px solid $mainHeaderColour;
+		}
+	}
+	input[type=text], input[type=email] {
+		padding: 1.6rem;
+	}
+	textarea {
+		height: 20rem;
+		resize: none;
+	}
+
+	.form-left, .form-right {
+		flex-direction: column;
+		width: 50%;
+	}
+	.form-left {
+		width: calc(50% - 2rem);
+		margin-right: 2rem;
+		justify-content: space-between;
+	}
+
+}
+
+// MEDIA QUERIES
+@media (max-width: 768px) {
+	.contact { 
+		padding-bottom: 10rem;
+		.contact-container {
+			padding: 3rem 6rem;
+			text-align: center;
+				li {
+					width: 100%;
+					margin-bottom: 4rem;
+				}
+		}
+	}
+	.contact form {
+		width: 100%;
+		margin-top: 0rem;
+		padding: 4rem;
+		flex-direction: column;
+		justify-content: center;
+		align-content: justify-content;
+		input[type=submit] {
+			width: 50%;
+			white-space: normal;
+			text-align: center;
+		}
+		.form-left, .form-right {
+			flex-direction: column;
+			width: 100%;
+			
+		}
+	}
+}
+
+@media (max-width: 480px) { 
+	.contact { 
+		.map-container {
+			padding: 4rem;
+		}
+		.contact-container {
+			padding: 1rem 3rem;
+				li {
+					margin-bottom: 3rem;
+				}
+		}
+	}
+	.contact form {
+		input[type=submit] {
+			padding: 0.4rem 2.4rem;
+		}
+	}
+}
+
+

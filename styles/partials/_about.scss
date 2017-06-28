@@ -1,0 +1,114 @@
+// ABOUT ****
+.about {
+	h2, .subheading {
+		text-align: center;
+	}
+	.subheading {
+		margin-bottom: 10rem;
+	}
+}
+.about-item {
+	width: calc(50% - 2.8rem);
+	display: flex;
+	margin: 1.4rem;
+	transition: all 0.3s ease;
+	&:hover {
+		transform: translateY(-10%);
+		box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+	}
+	.about-image1 {
+		background-image: url(../assets/about-us1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.about-image2 {
+		background-image: url(../assets/about-us2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.about-image3 {
+		background-image: url(../assets/about-us3.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.about-image4 {
+		background-image: url(../assets/about-us4.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.about-image {
+		width: 40%;
+	}
+	.about-content {
+		width: 60%;
+		background-color: #fff;
+		padding: 5rem;
+		.main-content {
+			color: #999999;
+		}
+		a {
+			@include lowerHeadingStyle ($mainTextColour, 1.1rem, 2.6rem);
+			display: block;
+			text-align: right;
+			transition: all 0.3s ease;
+			&:hover {
+				transform: translateX(-2rem);
+			}
+		}
+	}
+}
+
+// MEDIA QUERIES ****
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.about-gallery {
+		flex-direction: column;
+		.about-item {
+			width: calc(100% - 4rem);
+			display: flex;
+			margin: 2rem;
+		}
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.about-gallery {
+		flex-direction: column;
+		align-items: center;
+		.about-item {
+			width: calc(80% - 4rem);
+			display: flex;
+			flex-direction: column;
+			margin: 2rem;
+			.about-image {
+				width: 100%;
+				min-height: 247px;
+			}
+			.about-content {
+				width: 100%;
+			}
+		}
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.about {
+		padding-top: 10rem;
+		.subheading {
+			margin-bottom: 5rem;
+		}
+	}
+	.about-gallery {
+		.about-item {
+			width: calc(90% - 4rem);
+		}
+	}
+}

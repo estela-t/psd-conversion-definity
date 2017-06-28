@@ -1,0 +1,119 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.contact-wrapper {
+	max-width: 750px;
+	margin: 0 auto;
+}
+section {
+	padding: 12rem 0 0rem 0;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+h1 {
+	font-family: $Open;
+	font-size: 12rem;
+	font-weight: 700;
+	color: #fff;
+	line-height: 8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.8rem;
+}
+
+h2 {
+	font-family: $Mont;
+	font-size: 2.1rem;
+	font-weight: 400;
+	color: $mainHeaderColour;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+}
+
+h3 {
+	font-family: $Mont;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: $mainHeaderColour;
+	line-height: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+}
+
+h4 {
+	font-family: $Mont;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 2rem;
+	color: $mainHeaderColour;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+p.main-content {
+	font-family: $Open;
+	font-size: 1.4rem;
+	font-weight: 300;
+	color: $mainTextColour;
+	line-height: 2.6rem;
+}
+
+p.subheading {
+	font-family: $Open;
+	font-size: 1.4rem;
+	font-weight: 300;
+	color: $mainTextColour;
+	line-height: 2.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.grey-section {
+	background-color: #f8f8f8;
+}
+
+.button {
+	@include buttonStyle;
+}
+
+.visuallyHidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); 
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+// font-family: Montserrat;
+// color:  #111111;
+// font-size: 12.97px;/* Approximation due to font substitution */
+// font-weight: 400;
+// line-height: 3.775px;/

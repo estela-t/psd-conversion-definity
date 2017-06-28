@@ -1,0 +1,137 @@
+// TESTIMONIALS ****
+
+section.testimonials {
+	padding-bottom: 10rem;
+	h2, .subheading {
+		text-align: center;
+	}
+	.subheading {
+		margin-bottom: 10rem;
+	}
+	.testimonial-container {
+		justify-content: space-between;
+		.testimonial {
+		background-color: #fff;
+		width: calc(33.3% - 3rem);
+		padding: 5rem 4.5rem;
+		text-align: center;
+		transition: all 0.3s ease;
+		&:hover {
+			transform: translateY(-10%);
+			box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		.client-photo {
+			margin-bottom: 3rem;
+		}
+		.company, .author {
+			font-family: $Open;
+			font-size: 1.2rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.3rem;
+		}
+		.author {
+			color: $mainTextColour;
+			margin: 3rem 0 0 0;
+			padding-top: 3rem;
+		}
+		.company {
+			color: $mainHeaderColour;
+			margin-bottom: 3rem;
+			margin-top: 0;
+		}
+	}
+	}
+
+.testimonial-text {
+	padding: 3rem auto;
+	position: relative;
+	// margin-bottom: 3rem;
+	&:before {
+		content: "";
+		width: 75%;
+		height: 0.1rem;
+		background-color: #999999;
+		position: absolute;
+		top: -20px;
+		right: 12.5%;
+		left: 12.5%;
+		transform: translate(0, -50%);
+	}
+
+	&:after {
+		content: "";
+		width: 20rem;
+		height: 0.15rem;
+		background-color: #999999;
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+	.brand-container {
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		margin-top: 10rem;
+	}
+
+}
+
+
+// MEDIA QUESRIES ****
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	section.testimonials {
+		.testimonial-container {
+			justify-content: space-between;
+			.testimonial {
+			width: calc(50% - 3rem);
+			padding: 5rem 4.5rem;
+			text-align: center;
+			transition: all 0.3s ease;
+			&:last-child {
+				margin: 0 auto;
+				margin-top: 5rem;
+			}
+		}
+		}
+}
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	section.testimonials {
+		p.subheading {
+			margin-bottom: 1.4rem;
+		}
+		.testimonial-container {
+			.testimonial {
+			width: calc(80% - 3rem);
+			padding: 5rem 4.5rem;
+			margin: 5rem auto 0 auto;
+			}
+		}
+	}
+	.brand-container {
+		width: 80%;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	section.testimonials {
+		.testimonial-container {
+			.testimonial {
+			width: calc(90% - 3rem);
+			}
+		}
+	}
+}

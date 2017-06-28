@@ -1,0 +1,150 @@
+// FOOTER ****
+
+.main-footer {
+	background-color: $mainHeaderColour;
+	padding: 10rem;
+	h3 {
+		color: #fff;
+		border-bottom: 1px solid #fff;
+		padding-bottom: 1.7rem;
+	}
+	i {
+		font-size: 2rem;
+		color: $accentGrey;
+		margin-right: 1rem;
+	}
+}
+
+.footer-container {
+	justify-content: space-between;
+	margin: 0 auto;
+	.footer-column {
+		width: 23%;
+	}
+	.column-insta {
+		justify-content: space-between;
+		align-items: center;
+		.insta-image {
+			width: calc(33.3% - 0.2rem);
+			margin: 0.1rem;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+	.column-twitter {
+		i {
+			margin-right: 1rem;
+			width: calc(10% - 1rem);
+		}
+		p {
+			width: calc(90% - 1rem);
+			display: inline-block;
+			margin-top: 0;
+		}
+	}
+
+	.column-subscribe form {
+		width: 100%;
+		input[type=email]{
+			width: 80%;
+			padding: 1.5rem 0.5rem;
+			font-family: "OpenSans", sans-serif;
+			font-size: 1.6rem;
+			font-weight: 300;
+			color: #777777;
+			background-color: #222222;
+			border: none;
+		}
+		button {
+			width: 20%;
+			padding: 1.5rem 0.5rem;
+			border: none;
+		}
+	}
+}
+.bottom-footer {
+	background-color: #222222;
+	.wrapper {
+		justify-content: space-between;
+		p {
+			font-family: $Mont;
+			font-size: 1.2rem;
+			color: $mainTextColour;
+			font-weight: 400;
+			line-height: 4;
+			text-transform: uppercase;
+			letter-spacing: 0.2rem;
+		}
+		a {
+			color: $mainTextColour;
+			transition: color 0.3s ease;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
+
+// MEDIA QUERIES ****
+
+@media (max-width: 940px) {
+	.footer-container {
+		justify-content: space-between;
+		margin: 0 auto;
+		.footer-column {
+			width: 48%;
+		}
+		.column-insta {
+			.insta-image {
+				width: calc(33.3% - 0.2rem);
+				margin: 0.1rem;
+			img {
+				max-width: 100%;
+			}
+		}
+		.column-twitter p {
+			width: 90%;
+		}
+		.column-twitter i {
+			width: calc(10% - 1rem);
+		}
+	}
+	}
+}
+
+@media (max-width: 768px) {
+	.footer-container {
+		flex-direction: column;
+		.footer-column {
+			width: 100%;
+		}
+	}
+	.bottom-footer {
+		.wrapper {
+			flex-direction: column;
+			text-align: right;
+			padding-right: 10rem;
+			p {
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.main-footer {
+		padding: 4rem;
+	}
+	.footer-container {
+		.column-insta, .column-twitter, .column-subscribe {
+			padding-top: 4rem;
+		}
+	}
+	.bottom-footer {
+		.wrapper {
+			padding-right: 0;
+			align-items: center;
+		}
+	}
+}

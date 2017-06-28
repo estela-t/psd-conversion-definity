@@ -1,0 +1,29 @@
+@mixin buttonStyle ($color: $accentGrey, $background-color: $mainHeaderColour){
+	font-family: $Mont;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: $color;
+	background-color: $background-color;
+	line-height: 2.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	display: inline-block;
+	border: 1px solid transparent;
+}
+
+@mixin navLinks ($color, $font-size) {
+	font-family: $Open;
+	font-weight: 300;
+	color: $color;
+	font-size: $font-size;
+	text-transform: uppercase;
+}
+
+@mixin lowerHeadingStyle ($color, $font-size, $line-height){
+	font-family: $Mont;
+	color: $color;
+	font-size: $font-size;
+	line-height: $line-height;
+	text-transform: uppercase;
+	font-weight: 400;
+}

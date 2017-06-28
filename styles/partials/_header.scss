@@ -1,0 +1,206 @@
+header {
+	background-image: url(../assets/hero.jpg);
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-between;
+	&:after {
+		content: "";
+		position: absolute;
+		background-color: rgba(17,17,17,0.6);
+		width: 100%;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.nav-container {
+		justify-content: space-between;
+		align-items: center;
+		z-index: 5;
+		.logo {
+			padding: 0.6rem 2rem;
+			background-color: #fff;
+			font-family: $Mont;
+			font-size: 1.6rem;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 0.5rem;
+			display: inline-block;
+		}
+		nav{
+			.main-nav a, .secondary-nav a {
+			@include navLinks (#999999, 1.2rem);
+			padding: 1.5rem;
+			transition: color 0.3s ease;
+			&:hover {
+				color: #fff;
+				}
+			}
+		}
+	}
+	.header-container {
+		align-self: center;
+		z-index: 5;
+		text-align: center;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		.header-button {
+			@include buttonStyle ($mainHeaderColour, #ececec);
+			padding: 1rem 3.8rem;
+			transition: all 0.3s ease;
+			&:hover {
+				background: $mainHeaderColour;
+				color: #ececec;
+				border: 1px solid #ececec;
+			}
+		}
+	}
+	.mouse {
+		align-self: center;
+		z-index: 5;
+	}
+
+	.header-content {
+		margin: 0 auto;
+	}
+
+	.scroll-container {
+		width: 6rem;
+		z-index: 5;
+		position: absolute;
+		right: 0;
+		top: 40%;
+		a {
+			display: block;
+			background: #ececec;
+			padding: 2rem;
+			text-align: center;
+			border: 1px solid $mainHeaderColour;
+			i {
+				font-size: 1.5rem;
+				color: $mainHeaderColour;
+			}
+		}
+	}
+
+}
+
+.overlay.nav-container {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.99);
+}
+
+.overlay ul {
+	flex-direction: column;
+}
+.overlay ul a {
+	font-size: 5rem;
+	text-align: center;
+	width: 100%;
+}
+
+.overlay .hamburger {
+	display: block;
+	font-size: 50px;
+	text-align: center;
+}
+.hamburger {
+	display: none;
+	font-size: 2.4rem;
+	color: #fff;
+	position: absolute;
+	right: 5%;
+	top: 5%;
+}
+
+// MEDIA QUERIES ****
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 803px) {
+header {
+	.header-container {
+		h1 {
+			font-size: 8rem;
+		}
+		p.subheading {
+			font-size: 1.2rem;
+		}
+		.header-button {
+			font-size: 1rem;
+			padding: 0.6rem 3.4rem;
+		}
+}
+		.scroll-container {
+			width: 4rem;
+			a {
+				padding: 1.4rem;
+				i {
+					font-size: 1rem;
+				}
+			}
+		}
+
+	
+	.hamburger {
+		display: block;
+
+	}
+	nav.flex-container {
+		flex-direction: column;
+	}
+	.nav-container ul {
+		display: none;
+		flex-direction: column;
+		max-width: 25rem;
+		margin: 0 auto;
+		}
+
+	.nav-container ul.show {
+		display: flex;
+		li {
+			padding: 0.6rem;
+			text-align: center;
+		a {
+			font-size: 2.6rem;
+			margin: 1rem;
+		}
+	}
+	}
+	.overlay.nav-container {
+		z-index: 10;
+	}
+}
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+	header {
+		.header-container {
+			h1 {
+				font-size: 6rem;
+			}
+			p.subheading {
+				font-size: 1.2rem;
+			}
+	}
+			.scroll-container {
+				display: none;
+			}
+	}
+}

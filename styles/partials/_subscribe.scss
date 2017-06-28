@@ -1,0 +1,77 @@
+// SUBSCRIBE ****
+.subscribe {
+	text-align: center;
+	background-image: url(../assets/geometric_bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 9rem 0;
+	position: relative;
+	z-index: 3;
+		&:after {
+		content: "";
+		position: absolute;
+		background: rgba(17, 17, 17, 0.55);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	.subscribe-heading{
+		font-family: $Open;
+		font-size: 1.8rem;
+		color: $accentGrey;
+		text-transform: uppercase;
+		font-weight: 300;
+		letter-spacing: 0.3rem;
+	}
+}
+.subscribe form {
+	input[type=email] {
+		padding: 2rem 5rem;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid $mainTextColour;
+		margin-bottom: 5rem;
+		text-align: center;
+		&::placeholder {
+			font-family: $Open;
+			font-size: 4rem;
+			color: $accentGrey;
+		}
+		&:placeholder-shown {
+		font-family: $Open;
+		font-size: 4rem;
+		color: $accentGrey;
+	}
+}
+	.subscribe-button {
+		@include buttonStyle ($mainHeaderColour, $accentGrey);
+		padding: 1rem 3.8rem;
+		margin-top: 3rem;
+		display: block;
+		margin: 0 auto;
+		transition: all 0.3s ease;
+		&:hover {
+			background: $mainHeaderColour;
+			color: #ececec;
+			border: 1px solid #ececec;
+		}
+	}
+}
+
+// MEDIA QUERIES ****
+
+@media (max-width: 768px) {
+	.subscribe form {
+		input[type=email] {
+			padding: 1rem 2.5rem;
+			&::placeholder {
+				font-size: 2rem;
+			}
+			&:placeholder-shown {
+			font-size: 2rem;
+		}
+	}
+}
+}
