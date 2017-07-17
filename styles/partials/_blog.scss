@@ -123,6 +123,12 @@
 			.blog-content {
 				padding: 3rem;
 			}
+			&:last-child {
+				width: calc(90% - 3rem);
+				margin: 0 auto;
+				display: block;
+				margin-top: 0;
 		}
 	}
+}
 }

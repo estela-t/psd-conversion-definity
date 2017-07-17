@@ -40,7 +40,7 @@
 			<div class="header-content">
 			<h1>Inspire</h1>
 			<p class="subheading">Multipage & Onepage HTML5 Templates</p>
-				<a href="" class="button header-button">Learn More</a>
+				<a href="#about-us" class="button header-button">Learn More</a>
 			</div>
 		</div>
 		<div class="mouse">
@@ -117,7 +117,7 @@
 				</div>
 			</div>
 			<div class="button-container">
-				<a href="" class="button process-button">Get a Free Quote</a>
+				<a href="#contact" class="button process-button">Get a Free Quote</a>
 			</div>
 		</div>      <!-- END OF WRAPPER  -->
 	</section>
@@ -125,8 +125,7 @@
 	<!-- FEATURES -->
 	<section class="features flex-container" id="features">
 		<ul class="tabs">
-			<li class="feature-tab">
-				<a href="">
+			<li class="feature-tab active" data-tab="tab-1">
 					<div class="feature-icon">
 						<img src="assets/weather_lightning.svg" alt="lightning icon">
 					</div>
@@ -134,10 +133,8 @@
 						<h3>Lightning Fast</h3>
 						<p class="subheading">Lorem ipsum dolor sit amet</p>
 					</div>
-				</a>
 			</li>
-			<li class="feature-tab">
-				<a href="">
+			<li class="feature-tab" data-tab="tab-2">
 					<div class="feature-icon">
 						<img src="assets/basic_server2.svg" alt="server icon">
 					</div>
@@ -145,10 +142,8 @@
 						<h3>Dedicated Server</h3>
 						<p class="subheading">Lorem ipsum dolor sit amet</p>
 					</div>
-				</a>
 			</li>
-			<li class="feature-tab">
-				<a href="">
+			<li class="feature-tab" data-tab="tab-3">
 					<div class="feature-icon">
 						<img src="assets/basic_share.svg" alt="share icon">
 					</div>
@@ -156,16 +151,41 @@
 						<h3>Connected 24/7</h3>
 						<p class="subheading">Lorem ipsum dolor sit amet</p>
 					</div>
-				</a>
 			</li>
 		</ul>
 		<div class="feature-container flex-container">
-			<div class="feature-expand flex-container">
+			<div class="feature-expand flex-container active" id="tab-1">
 				<div class="feature-content">
-					<h4>Promo Text Here</h4>
+					<h4>Lightning Fast</h4>
 					<p class="main-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officiis sunt ipsa pariatur veniam velit obcaecati earum quam harum iusto quia, numquam accusamus, esse! Expedita earum, labore laudantium recusandae iure.</p>
 					<div class="button feature-button">
-						<a href="">Get it now</a>
+						<a href="#contact">Get it now</a>
+					</div>
+				</div>
+					<div class="feature-image">
+						<img src="assets/destop-image.jpg" alt="iMac screen">
+					</div>
+			</div>
+
+			<div class="feature-expand flex-container" id="tab-2">
+				<div class="feature-content">
+					<h4>Dedicated Server</h4>
+					<p class="main-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officiis sunt ipsa pariatur veniam velit obcaecati earum quam harum iusto quia, numquam accusamus, esse! Expedita earum, labore laudantium recusandae iure.</p>
+					<div class="button feature-button">
+						<a href="#contact">Get it now</a>
+					</div>
+				</div>
+					<div class="feature-image">
+						<img src="assets/destop-image.jpg" alt="iMac screen">
+					</div>
+			</div>
+
+			<div class="feature-expand flex-container" id="tab-3">
+				<div class="feature-content">
+					<h4>Connected 24/7</h4>
+					<p class="main-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officiis sunt ipsa pariatur veniam velit obcaecati earum quam harum iusto quia, numquam accusamus, esse! Expedita earum, labore laudantium recusandae iure.</p>
+					<div class="button feature-button">
+						<a href="#contact">Get it now</a>
 					</div>
 				</div>
 					<div class="feature-image">
@@ -265,7 +285,7 @@
 	<section class="reach-out">
 		<p class="reach-heading">See What We Can Do For You</p>
 		<div class="button reach-out-button">
-			<a href="">Get In Touch</a>
+			<a href="#contact">Get In Touch</a>
 		</div>
 	</section>
 
@@ -466,7 +486,7 @@
 			<p>&copy Definity. Design by Octarine Themes.</p>
 		</div>
 		<div class="top">
-			<p><a href="" id="page-top">To The Top</a></p>
+			<p><a href="#header" id="page-top">To The Top</a></p>
 		</div>
 		</div>      <!-- END OF WRAPPER  -->
 	</footer>
