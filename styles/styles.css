@@ -394,7 +394,8 @@ header {
   color: #fff;
   position: absolute;
   right: 5%;
-  top: 5%; }
+  top: 5%;
+  margin: 1rem 0; }
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
